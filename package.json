@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "This application uses the NPM package Inquirer to generate a README file by prompting the following user inputs in the command line:\r 1. Project Title\r 2. Description\r 3. Installation Instructions \r 4. Usage Information\r 5. Contribution Guidelines\r 6. Test Instructions\r 7. Licenses\r 8. GitHub Username\r 9. Email Address",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthale11/readme-generator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/matthale11/readme-generator/issues"
+  },
+  "homepage": "https://github.com/matthale11/readme-generator#readme"
 }
