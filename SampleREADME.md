@@ -1,7 +1,7 @@
-# Example Project
+# Sample Project
 
   ## Description
-  This is an example application. It doesn't exist.
+  This is a description of my sample project.
 
   ![License Badge](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
@@ -13,16 +13,16 @@
   - Tests
 
   ## Installation
-  Press the install button.
+  Please install by clicking the button.
 
   ## Usage
-  Use the terminal for this application.
+  Step 1 Step 2 Step 3
 
   ## License
   This application uses [Apache](https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
-  Please handle with care.
+  Please be careful.
 
   ## Tests
   None.
