@@ -15,4 +15,4 @@ From the command line, this app is initiated by entering the following command: 
 
 [README Generator Repo](https://github.com/matthale11/readme-generator)
 
-![Screenshot](../screenshot.PNG)
+![Screenshot](./screenshot.PNG)
