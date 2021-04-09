@@ -10,15 +10,15 @@ const questions = [
   "Installation Instructions",
   "Usage Information",
   "Contribution Guidelines",
-  "Test Instructions",
-  "License",
+  "Testing Instructions",
+  "License References",
   "GitHub Username",
   "Email Address",
 ];
 
 // TODO: Create a function to write README file
 const writeReadMe = (answers) => {
-  fs.writeFile("NewREADME.md", generateMarkdown(answers));
+  fs.writeFile("NewREADME.md", generateMarkdown(answers), (err) => err ? console.log(error) : console.log('Success!'));
 };
 
 // TODO: Create a function to initialize app
@@ -72,9 +72,7 @@ function init() {
         name: "email",
       },
     ])
-    .then(writeReadMe(answers))
-    .then(() => console.log("README successfully created!"))
-    .catch((err) => console.error(err));
+    .then((answers) => writeReadMe(answers))
 }
 
 // Function call to initialize app

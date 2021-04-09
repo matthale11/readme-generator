@@ -1,6 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
+  let text;
   switch (license) {
     case "MIT":
       text = "https://img.shields.io/badge/License-MIT-yellow.svg";
@@ -14,11 +15,13 @@ function renderLicenseBadge(license) {
     default:
       "";
   }
+  return text;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
+  let text;
   switch (license) {
     case "MIT":
       text = "https://opensource.org/licenses/MIT";
@@ -32,6 +35,7 @@ function renderLicenseLink(license) {
     default:
       "";
   }
+  return text;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -39,9 +43,9 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license != null) {
     return (
-      "[![License](" +
+      "![License](" +
       renderLicenseBadge(license) +
-      ")](" +
+      ") [License Link](" +
       renderLicenseLink(license) +
       ")"
     );
@@ -58,8 +62,8 @@ function generateMarkdown(answers) {
   ${answers.description}
 
   # Table of Contents
-  - License
   - Installation
+  - Usage
   - Contributing
   - Tests
   - Licenses
