@@ -64,9 +64,9 @@ function generateMarkdown(answers) {
   # Table of Contents
   - Installation
   - Usage
+  - License
   - Contributing
   - Tests
-  - Licenses
 
   ## Installation
   ${answers.installation}
@@ -74,14 +74,14 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.usage}
 
+  ## Licenses
+  ${renderLicenseSection(answers.license)}
+
   ## Contributing
   ${answers.contributing}
 
   ## Tests
   ${answers.tests}
-
-  ## Licenses
-  ${renderLicenseSection(answers.license)}
 
   [GitHub Profile](https://github.com/${answers.username})
 

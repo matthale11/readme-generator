@@ -46,6 +46,12 @@ function init() {
         name: "usage",
       },
       {
+        type: "list",
+        choices: ["MIT", "Apache", "Creative Commons"],
+        message: questions[6],
+        name: "license",
+      },
+      {
         type: "input",
         message: questions[4],
         name: "contributing",
@@ -55,12 +61,7 @@ function init() {
         message: questions[5],
         name: "tests",
       },
-      {
-        type: "list",
-        choices: ["MIT", "Apache", "Creative Commons"],
-        message: questions[6],
-        name: "license",
-      },
+
       {
         type: "input",
         message: questions[7],
