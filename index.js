@@ -9,7 +9,6 @@ const questions = ['Project Title', 'Description', 'Installation Instructions', 
 // TODO: Create a function to write README file
 const writeReadMe = (answers) => {fs.writeFile('NewREADME.md', generateMarkdown(answers))};
 
-
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt([
