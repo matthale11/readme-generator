@@ -7,7 +7,7 @@ const markdown = require('./utils/generateMarkdown');
 const questions = ['Project Title', 'Description', 'Installation Instructions', 'Usage Information', 'Contribution Guidelines', 'Test Instructions', 'License', 'GitHub Username', 'Email Address'];
 
 // TODO: Create a function to write README file
-const writeReadMe = (answers) => {fs.writeFile('NewREADME.md', markdown)};
+const writeReadMe = (answers) => {fs.writeFile('NewREADME.md', markdown(answers))};
 
 
 // TODO: Create a function to initialize app
@@ -60,7 +60,7 @@ function init() {
             name: 'email',
         },
     ])
-    .then(writeReadMe())
+    .then(writeReadMe(answers))
     .then(() => console.log('README successfully created!'))
     .catch((err) => console.error(err))
 };
