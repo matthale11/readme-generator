@@ -18,7 +18,7 @@ const questions = [
 
 // Create a function to write README file
 const writeReadMe = (answers) => {
-  fs.writeFile("NewREADME.md", generateMarkdown(answers), (err) => err ? console.log(error) : console.log('Success!'));
+  fs.writeFile("SampleREADME.md", generateMarkdown(answers), (err) => err ? console.log(error) : console.log('Success!'));
 };
 
 // Create a function to initialize app

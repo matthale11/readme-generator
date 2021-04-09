@@ -83,8 +83,8 @@ function generateMarkdown(answers) {
   ## Tests
   ${answers.tests}
 
+  ## Questions
   [GitHub Profile](https://github.com/${answers.username})
-
   [Email Address](mailto:${answers.email})
 `;
 }
